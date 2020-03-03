@@ -366,13 +366,14 @@ body {
   background-color: #93867F;
   min-height: 100vh;
   font-family: "calibre-light";
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
   body {
     display: flex;
     align-items: center;
+    font-size: 20px;
   }
 }
 
@@ -385,7 +386,7 @@ h1 {
   padding-right: 15px;
   padding-left: 15px;
   margin: auto;
-  margin-top: -30vh;
+  margin-top: -45vh;
   text-align: center;
 }
 
