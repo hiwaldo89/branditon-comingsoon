@@ -1,0 +1,72 @@
+@import "~normalize.css/normalize.css";
+$color--pink: #E8CDBD;
+$color--nude: #93867F;
+
+@font-face {
+    font-family: 'calibre-light';
+    src: url('./fonts/Calibre-Light.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: 'calibre-medium';
+    src: url('./fonts/Calibre-Medium.otf') format('OpenType');
+}
+
+body {
+    background-color: $color--nude;
+    min-height: 100vh;
+    font-family: "calibre-light";
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'calibre-medium';
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+    text-align: right;
+    @media(min-width: 576px) {
+        width: 540px;
+    }
+    @media(min-width: 768px) {
+        width: 720px;
+    }
+    @media(min-width: 992px) {
+        width: 960px;
+    }
+    @media(min-width: 1200px) {
+        width: 1140px;
+    }
+}
+
+.content {
+    display: inline-block;
+    text-align: left;
+    color: $color--pink;
+    a {
+        color: $color--pink;
+        font-family: "calibre-medium";
+        text-decoration: none;
+    }
+}
+
+.desktop-pattern {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .logo {
+        .logo__copy {
+            path {
+                fill: transparent;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
