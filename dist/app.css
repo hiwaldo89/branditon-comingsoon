@@ -444,7 +444,7 @@ h1 {
 
 .desktop-pattern .pattern path,
 .desktop-pattern .pattern polygon {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .desktop-pattern .pattern.pattern--fadeOut path,
@@ -454,7 +454,7 @@ h1 {
 
 .desktop-pattern .logo .logo__copy path {
   fill: transparent;
-  transition: all 0.3s 0.5s ease-in-out;
+  transition: all 0.5s 0.8s ease-in-out;
 }
 
 .desktop-pattern .logo.logo--fadeIn .logo__copy path {
