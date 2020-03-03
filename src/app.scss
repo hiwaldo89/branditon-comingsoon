@@ -12,12 +12,19 @@ $color--nude: #93867F;
     src: url('./fonts/Calibre-Medium.otf') format('OpenType');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: $color--nude;
     min-height: 100vh;
     font-family: "calibre-light";
-    display: flex;
-    align-items: center;
+    font-size: 16px;
+    @media(min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 h1 {
@@ -29,12 +36,15 @@ h1 {
     padding-right: 15px;
     padding-left: 15px;
     margin: auto;
-    text-align: right;
+    margin-top: -30vh;
+    text-align: center;
     @media(min-width: 576px) {
         width: 540px;
     }
     @media(min-width: 768px) {
         width: 720px;
+        margin-top: auto;
+        text-align: right;
     }
     @media(min-width: 992px) {
         width: 960px;
@@ -61,11 +71,65 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
+    @media(min-width: 768px) {
+        display: block;
+    }
+    .pattern {
+        path, polygon {
+            transition: all 0.3s ease-in-out;
+        }
+        &.pattern--fadeOut {
+            path, polygon {
+                fill: transparent;
+            }
+        }
+    }
     .logo {
         .logo__copy {
             path {
                 fill: transparent;
-                transition: all 0.3s ease-in-out;
+                transition: all 0.3s 0.5s ease-in-out;
+            }
+        }
+        &.logo--fadeIn {
+            .logo__copy {
+                path {
+                    fill: $color--pink;
+                }
+            }
+        }
+    }
+}
+
+.mobile-pattern {
+    width: 100%;
+    height: auto;
+    @media(min-width: 768px) {
+        display: none;
+    }
+    .pattern {
+        path, polygon {
+            transition: all 0.3s ease-in-out;
+        }
+        &.pattern--fadeOut {
+            path, polygon {
+                fill: transparent;
+            }
+        }
+    }
+    .logo {
+        .logo__copy {
+            path {
+                fill: transparent;
+                transition: all 0.3s 0.5s ease-in-out;
+            }
+        }
+        &.logo--fadeIn {
+            .logo__copy {
+                path {
+                    fill: $color--pink;
+                }
             }
         }
     }
