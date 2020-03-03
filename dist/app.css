@@ -474,7 +474,7 @@ h1 {
 
 .mobile-pattern .pattern path,
 .mobile-pattern .pattern polygon {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .mobile-pattern .pattern.pattern--fadeOut path,
@@ -484,7 +484,7 @@ h1 {
 
 .mobile-pattern .logo .logo__copy path {
   fill: transparent;
-  transition: all 0.3s 0.5s ease-in-out;
+  transition: all 0.5s 0.8s ease-in-out;
 }
 
 .mobile-pattern .logo.logo--fadeIn .logo__copy path {
